@@ -13,7 +13,7 @@ function App() {
     getNews();
   },[])
   function getNews(){
-    fetch(`https://newsapi.org/v2/everything?q=${searchdata}&apiKey=e7792f17d048401c813b04cf1d09bae7`)
+    fetch(`http://newsapi.org/v2/everything?q=${searchdata}&apiKey=e7792f17d048401c813b04cf1d09bae7`)
     .then((response)=>response.json())
     .then((news)=>{
       setArticles(news.articles);
