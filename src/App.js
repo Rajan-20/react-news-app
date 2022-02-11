@@ -32,7 +32,7 @@ function App() {
       </div>
       <div className="articles">
         {
-          articles.map((article,index)=>{
+          articles?.map((article,index)=>{
             return(
               <div className="article" key={index}>
                 <img className="news-img" src={article.urlToImage}/>
